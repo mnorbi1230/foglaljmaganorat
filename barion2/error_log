@@ -1,0 +1,2 @@
+[16-Jun-2023 15:50:23 UTC] PHP Warning:  require_once(library/BarionClient.php): failed to open stream: No such file or directory in /home/embrosia/public_html/barion2/azonnaliFizetes.php on line 11
+[16-Jun-2023 15:50:23 UTC] PHP Fatal error:  require_once(): Failed opening required 'library/BarionClient.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/embrosia/public_html/barion2/azonnaliFizetes.php on line 11

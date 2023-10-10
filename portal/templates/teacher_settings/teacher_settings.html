@@ -1,0 +1,84 @@
+<div class='profil_session first'>
+    <div class='profilcim'>Felhasználói adatok:</div>
+    <div class='subrow'>
+        <div class='subcol'>Felhasználónév </div>
+        <div class='subcol'>
+            <input type='text' disabled='disabled' id='ps_user' value='{$params['username']}'/>
+        </div>
+    </div>
+    <div class='subrow'>
+        <div class='subcol'>Email</div>
+        <div class='subcol'>
+            <input type='text' disabled='disabled' id='ps_pass' value='{$params['email']}'/>
+        </div>
+    </div>
+    <div class='subrow {$params['4']}'>
+    <div class='subcol'>Telefonszám </div>
+    <div class='subcol'>
+        <input type='text' id='ps_phnumber' value='{$params['phonenumber']}' onchange='handleInputChange(this)'/>
+    </div>
+</div>
+</div>
+<div class='profil_session_admin'>
+    <div class='profil_session'>
+            <div class='subrow {$params['1']}'>
+            <div class='subcol'>Név</div>
+            <div class='subcol'>
+                <input type='text' id='ps_nev' value='{$params['name']}' oninput='handleInputChange(this)'/>
+            </div>
+        </div>
+        <div class='subrow {$params['3']}'>
+        <div class='subcol'>Adószám</div>
+        <div class='subcol'>
+            <input type='text' id='taxnumber' value='{$params['taxnumber']}' onchange='handleInputChange(this)'/>
+        </div>
+        </div>
+        <div class='subrow {$params['5']}'>
+        <div class='subcol'>Irányítószám</div>
+        <div class='subcol'>
+            <input type='text' id='ps_irsz' value='{$params['postcode']}' onchange='handleInputChange(this)'/>
+        </div>
+        </div>
+        <div class='subrow {$params['6']}'>
+        <div class='subcol'>Város </div>
+        <div class='subcol'>
+            <input type='text' id='ps_city' value='{$params['city']}' onchange='handleInputChange(this)'/>
+        </div>
+        </div>
+        <div class='subrow {$params['7']}'>
+        <div class='subcol'>Utca és házszám</div>
+        <div class='subcol'>
+            <input type='text' id='ps_street' value='{$params['address']}' onchange='handleInputChange(this)'/>
+        </div>
+        </div>
+    </div>
+
+    <div class='profil_session'>
+        <div class='subrow {$params['8']}'>
+        <div class='subcol'>Barion profil email-cím</div>
+        <div class='subcol'>
+            <input type='email' id='barion_email' value='{$params['barion_email']}' onchange='handleInputChange(this)'/>
+        </div>
+        </div>
+        <div class='subrow {$params['9']}'>
+        <div class='subcol'>Barion MyPosKey</div>
+        <div class='subcol'>
+            <input type='text' id='barion_myposkey' value='{$params['barion_myposkey']}' onchange='handleInputChange(this)'/>
+        </div>
+        </div>
+        <div class='subrow {$params['11']}'>
+        <div class='subcol'>Számlázz.hu profil email-cím</div>
+        <div class='subcol'>
+            <input type='text' id='szamlazz_email' value='{$params['szamlazz_email']}' onchange='handleInputChange(this)'/>
+        </div>
+        </div>
+        <div class='subrow {$params['12']}'>
+        <div class='subcol'>Számlázz.hu profil jelszó</div>
+        <div class='subcol'>
+            <input type='text' id='szamlazz_password' value='{$params['szamlazz_password']}' onchange='handleInputChange(this)'/>
+        </div>
+        </div>
+    </div>
+
+</div>
+<div id='gomb' onclick='send(1)'>Adatok frissítése</div>

@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    color: var(--first-color);
+}
+#timetable{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    font-size: 25px;
+    color: var(--first-color);
+    font-weight: bold;
+}
+#timetable tr{
+    display: inline-table;
+    width: 100%;
+     margin: 10px 0;
+ }
+
+#timetable td{
+    position: relative;
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+    margin: 10px 0;
+    box-shadow: 0 0 0 5px var(--second-color);
+    border-radius: 3px;
+}

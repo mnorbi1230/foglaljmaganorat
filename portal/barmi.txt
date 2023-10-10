@@ -1,0 +1,1 @@
+UPDATE addresses SET postcode='2300',city='Ráckeve',address='Iskola utca 7' WHERE id='9';
