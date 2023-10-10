@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 38px;
+    color: var(--second-color);
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    top: 5vh;
+}
+#leiras a{
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+    text-decoration: none;
+    color: var(--first-color)
+}
+#leiras a div{
+    border: 5px solid var(--second-color);
+    border-radius: 5px;
+    text-align: center;
+}
+#leiras a div:hover{
+    color: var(--second-color);
+    background-color: var(--first-color);
+}
+#leiras, #logom{
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and (max-width:1000px) {
+    .container{
+        top: 10vh;
+        width: 90%;
+    }
+    #logom img{
+        width: 100%;
+    }
+    #leiras a {
+        width: 100%;
+    }
+}

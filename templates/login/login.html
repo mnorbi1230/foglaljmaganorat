@@ -1,0 +1,13 @@
+<h1>Bejelentkezés</h1>
+<form class='container' action='login' method='post'>
+    <div id='username-box' class='input-box'>
+        <div class='label'>Felhasználónév vagy Email-cím:</div>
+        <input value='{$params['name']}' minlength='3' maxlength='25' name='name' type='text' id='username' required/>
+    </div>
+    <div id='password-box' class='input-box'>
+        <div class='label'>Jelszó:</div>
+        <input minlength='8' maxlength='255' name='password' type='password' id='nev' required/>
+    </div>
+    <input type='submit' class='button' value='Bejelentkezés'/>
+    <a href='regisztracio'><div class='button'>Regisztráció</div></a>
+</form>

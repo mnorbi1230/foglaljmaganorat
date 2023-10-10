@@ -1,0 +1,1 @@
+SELECT hash FROM users WHERE (username='mnorbi12300' or email='mnorbi12300') AND password='8fc74ac4617628c72525672bb76e2d2f5419cf6713f9aa02c86d0c722051fd70';

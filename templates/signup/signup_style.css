@@ -1,0 +1,93 @@
+#regBox{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+#checkout-data{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+#userdata{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+.subrow .subcol:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+}
+.subrow .subcol:nth-child(2){
+
+}
+#addresses{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+#billing_add{
+    position: relative;
+    width: 50%;
+}
+#delivery_add{
+    position: relative;
+    width: 50%;
+}
+#buttons{
+    position: relative;
+    display: flex;
+}
+#buttons .subcol{
+    position: relative;
+    width: 15%;
+    border: 3px solid black;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 10px 9%;
+}
+#buttons .subcol:hover{
+    background-color: black;
+    color: white;
+}
+.err{
+    color: red;
+    font-weight: bold;
+}
+@media screen and (max-width:950px) {
+    #addresses{
+        display: block;
+    }
+    #regBox{
+        width: 90%;
+    }
+}
+input{
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+}
+#submit{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 3px solid black;
+    margin: 10px auto;
+    cursor: pointer;
+}
+input[type='radio']{
+
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: black;
+    color: white;
+}

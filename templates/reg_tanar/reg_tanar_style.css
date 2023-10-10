@@ -1,0 +1,131 @@
+h1,h2{
+    color: var(--second-color);
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+h2{
+    padding-top: 20px;
+    font-size: 25px;
+}
+#adatmegadas h2{
+    padding: 0;
+}
+#content{
+    min-height: 900px;
+}
+.searchprodcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto;
+    width: 40%;
+}
+.searchimg{
+    width: 200px;
+}
+.searchright{
+    position: absolute;
+    left: 250px;
+    align-items: center;
+    display: inherit;
+    text-align: right;
+    height: 100%;
+}
+.searchright a{
+    text-decoration: none;
+    font-size: 50px;
+    color: var(--first-color);
+}
+#adatmegadas{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 15px auto;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.input-box input{
+    height: 40px;
+    width: 270px;
+    border: 5px solid var(--second-color);
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+    color: var(--first-color);
+}
+#content{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#osszeg{
+    text-align: center;
+    color: var(--second-color);
+}
+.button{
+    height: 50px;
+    line-height: 50px;
+    width: 270px;
+    border: 5px solid var(--second-color);
+    border-radius: 5px;
+    color: var(--second-color);
+    background-color: var(--first-color);
+    text-align: center;
+    margin: 20px auto;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-family: Kalam;
+}
+.label{
+    color: var(--second-color);
+
+}
+a{
+    text-decoration: underline;
+    color: var(--second-color);
+}
+.button:hover{
+    color: var(--first-color);
+    background-color: var(--second-color);
+}
+@media screen and (max-width:1000px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+        margin: 0;
+    }
+    .theme_box{
+        width: 100px;
+        height: 50px;
+        line-height: 40px;
+        font-size: 25px;
+    }
+    .input-box{
+        display: block;
+        position: relative;
+        width: 270px;
+        margin: 5px auto;
+    }
+    .label{
+        position: relative;
+        font-size: 20px;
+
+    }
+    .input-box input{
+        position: relative;
+        display: block;
+    }
+    #content{
+        height: 130vh;
+    }
+}

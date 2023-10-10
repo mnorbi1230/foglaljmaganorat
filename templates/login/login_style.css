@@ -1,0 +1,85 @@
+h1{
+    color: var(--second-color);
+    text-align: center;
+    position: relative;
+    top: 10vh;
+}
+.container{
+    align-items: center;
+    font-size: 38px;
+    color: var(--second-color);
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    top: 20vh;
+}
+
+.input-box{
+    display: block;
+    position: relative;
+    width: 270px;
+    margin: 5px auto;
+    margin-bottom: 10px;
+}
+.input-box input{
+    height: 40px;
+    width: 270px;
+    border: 5px solid var(--second-color);
+    border-radius: 5px;
+    right: 0;
+    font-size: 15px;
+    color: var(--first-color);
+    position: relative;
+    display: block;
+}
+.label{
+    color: var(--second-color);
+    position: relative;
+    font-size: 20px;
+}
+.button{
+    height: 50px;
+    line-height: 50px;
+    width: 270px;
+    border: 5px solid var(--second-color);
+    border-radius: 5px;
+    color: var(--second-color);
+    background-color: var(--first-color);
+    text-align: center;
+    margin: 20px auto;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-family: Kalam;
+}
+.button:hover{
+    color: var(--first-color);
+    background-color: var(--second-color);
+}
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:1000px) {
+    h1 {
+        font-size: 40px;
+    }
+    .container{
+        top: 10vh;
+        width: 90%;
+    }
+    .input-box{
+        display: block;
+        position: relative;
+        width: 270px;
+        margin: 5px auto;
+    }
+    .label{
+
+
+    }
+    .input-box input{
+
+    }
+
+}

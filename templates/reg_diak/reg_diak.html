@@ -1,0 +1,47 @@
+<h2>Diák vagy? <a href='regisztracio?mode=tanar'>Nem 😶</a></h2>
+
+<form id='adatmegadas' action='signup' method='post'>
+    <h2>Regisztráció Diákoknak</h2>
+    <div class='input-box'>
+        <div class='label'>Név:</div>
+        <input value='{$params['name']}' minlength='4' maxlength='80' name='name' type='text' id='nev' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Email-cím:</div>
+        <input value='{$params['email']}' minlength='6' maxlength='100' name='email' type='email' id='email' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Telefonszám:</div>
+        <input value='{$params['phonenumber']}' minlength='8' maxlength='12' name='phonenumber' type='tel' id='phonenumber' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Irányítószám:</div>
+        <input value='{$params['irsz']}' minlength='4' maxlength='4' name='irsz' type='number' id='irsz' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Város:</div>
+        <input value='{$params['city']}' minlength='2' maxlength='25' name='city' type='text' id='city' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Utca és házszám:</div>
+        <input value='{$params['street']}' minlength='7' maxlength='80' name='street' type='text' id='street' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Felhasználónév:</div>
+        <input value='{$params['user']}' minlength='3' maxlength='25' name='username' type='text' id='username' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Jelszó</div>
+        <input minlength='8' maxlength='255' name='pass1' type='password' id='pass1' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Jelszó mégegyszer</div>
+        <input minlength='8' maxlength='25' name='pass2' type='password' id='pass2' required/>
+    </div>
+    <input type='hidden' name='mode' value='diak'>
+    <input type='hidden' name='tanar' value='{$params['username']}'>
+    <input type='hidden' name='theme' value='{$params['theme']}'>
+    <input type='hidden' name='date' value='{$params['date']}'>
+    <input type='hidden' name='times' value='{$params['ok_times']}'>
+    <input type='submit' class='button' value='Regisztráció'/>
+</form>

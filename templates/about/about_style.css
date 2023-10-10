@@ -1,0 +1,12 @@
+h1,h2{
+    color: var(--second-color);
+}
+p{
+    text-align: justify;
+}
+h1,h2{
+    text-align: center;
+}
+#content{
+    background-color: rgba(0, 0, 0, 0.5);
+}

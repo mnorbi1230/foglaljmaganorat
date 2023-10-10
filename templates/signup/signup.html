@@ -1,0 +1,99 @@
+<div id='regBox'>
+    <h2>Felhasználói adatok</h2>
+    <div class='row'>
+        <div class='col'>Felhasználónév:</div>
+        <div class='col'>
+            <input type='text' id='username' onkeyup='Registration.check_username()'/>
+            <div id='err_username' class='err'></div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col'>E-mail:</div>
+        <div class='col'>
+            <input type='email' id='reg_email' onkeyup='Registration.check_email()'/>
+            <div id='err_email' class='err'></div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col'>Telefonszám: +36 </div>
+        <div class='col'>
+            <input type='text' id='phnumber' onkeyup='Registration.check_phnumber()'/>
+            <div id='err_phnumber' class='err'></div>
+        </div>
+    </div>
+    <div id='szamlazas'>
+        <h2>Számlázási adatok</h2><br/>
+        <div class='row'>
+            <div class='col'>Vezetéknév:</div>
+            <div class='col'>
+                <input type='text' id='vnev' onkeyup='Registration.check_vnev()'/>
+                <div id='err_vnev' class='err'></div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col'>Keresztnév:</div>
+            <div class='col'>
+                <input type='text' id='knev' onkeyup='Registration.check_knev()'/>
+                <div id='err_knev' class='err'></div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col'>Adószám:(csak cég esetében)</div>
+            <div class='col'>
+                <input type='text' id='taxnumber' onkeyup='Registration.check_taxnumber()'/>
+                <div id='err_taxnumber' class='err'></div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col'>Irányítószám:</div>
+            <div class='col'>
+                <input type='number' id='irsz' min='1000' maxlength='4' max='9999' onkeyup='Registration.check_irsz()'/>
+                <div id='err_irsz' class='err'></div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col'>Város:</div>
+            <div class='col'>
+                <input type='text' id='city' onkeyup='Registration.check_city()'/>
+                <div id='err_city' class='err'></div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col'>Utca és házszám:</div>
+            <div class='col'>
+                <input type='text' id='street' onkeyup='Registration.check_street()'/>
+                <div id='err_street' class='err'></div>
+            </div>
+        </div>
+    </div>
+    <div style='display: flex;align-items: normal'>
+    <div style='width: 50%;text-align: center;'>
+    <input type='radio' id='szamlazas2' name='szamlazas' value='1' onchange='valtas(0)' checked><br>
+    <label for='1'>A szállítási cím megegyezik</label>
+    </div>
+    <div style='width: 50%;text-align: center'>
+    <input type='radio' name='szamlazas' value='0' onchange='valtas(1)'><br>
+    <label for='1'>A szállítási cím különböző</label>
+    </div>
+    </div>
+
+    <div id='szallitas'>
+    </div>
+    <div class='row'>
+        <div class='col'>Jelszó:</div>
+        <div class='col'>
+            <input type='password' id='password' onkeyup='Registration.check_password()'/>
+            <div id='err_password' class='err'></div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col'>Jelszó újra:</div>
+        <div class='col'>
+            <input type='password' id='password2' onkeyup='Registration.check_password2()'/>
+            <div id='err_password2' class='err'></div>
+        </div>
+    </div>
+    <div id='submit' onclick='Reg.checkAndSend()'>
+        Küldés
+    </div>
+</div>

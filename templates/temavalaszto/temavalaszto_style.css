@@ -1,0 +1,100 @@
+h1,h2{
+    color: var(--second-color);
+}
+p{
+    text-align: justify;
+}
+h1,h2{
+    text-align: center;
+}
+.searchprodcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto;
+    width: 40%;
+}
+.searchimg{
+    width: 200px;
+}
+.searchright{
+    position: absolute;
+    left: 250px;
+    align-items: center;
+    display: inherit;
+    text-align: right;
+    height: 100%;
+}
+.searchright a{
+    text-decoration: none;
+    font-size: 50px;
+    color: var(--first-color);
+}
+#themesbox{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+.theme_box{
+    width: calc(50% - 20px);
+    margin: 10px;
+    height: 100px;
+    text-align: center;
+    border: 5px solid var(--second-color);
+    border-radius: 5px;
+    color: var(--second-color);
+    background-color: var(--first-color);
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+}
+.kivalasztott{
+    color: var(--first-color);
+    background-color: var(--second-color);
+}
+#inputbox input{
+    height: 50px;
+    width: 270px;
+    border: 5px solid var(--second-color);
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    color: var(--first-color);
+}
+#content{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.select-button{
+    height: 50px;
+    width: 270px;
+    border: 5px solid var(--second-color);
+    border-radius: 5px;
+    color: var(--second-color);
+    background-color: var(--first-color);
+    text-align: center;
+    margin: 10px auto;
+    cursor: pointer;
+
+}
+.select-button:hover{
+    color: var(--first-color);
+    background-color: var(--second-color);
+}
+@media screen and (max-width:1000px) {
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 25px;
+        margin: 20px 0;
+    }
+    .theme_box{
+        width: 290px;
+        margin: 10px auto;
+        font-size: 25px;
+    }
+
+}

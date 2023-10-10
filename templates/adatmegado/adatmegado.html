@@ -1,0 +1,44 @@
+<h1>Időpontfoglalás</h1>
+<h2>{$params['name']} magántanárhoz</h2>
+<h2>{$params['theme_name']} témájú magánórához({$params['theme_duration']} perc)</h2>
+<h2>Magánóra(k) {$params['date']} napján</h2>
+<h2 id='ok_times'></h2>
+
+<form id='adatmegadas' action='fizetes' method='post'>
+    <h2>Adatok megadása</h2>
+    <div class='input-box'>
+        <div class='label'>Név:</div>
+        <input name='name' type='text' id='nev' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Email-cím:</div>
+        <input name='email' type='email' id='email' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Telefonszám:</div>
+        <input name='phonenumber' type='tel' id='phonenumber' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Irányítószám:</div>
+        <input name='irsz' type='number' id='irsz' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Város:</div>
+        <input name='city' type='text' id='city' required/>
+    </div>
+    <div class='input-box'>
+        <div class='label'>Utca és házszám:</div>
+        <input name='street' type='text' id='street' required/>
+    </div>
+    <div id='osszeg'></div>
+    <input type='hidden' name='tanar' value='{$params['username']}'>
+    <input type='hidden' name='theme' value='{$params['theme']}'>
+    <input type='hidden' name='date' value='{$params['date']}'>
+    <input type='hidden' name='theme_duration' value='{$params['theme_duration']}'>
+    <input type='hidden' name='price' value='{$params['price']}'>
+    <input type='hidden' name='email' value='{$params['email']}'>
+    <input type='hidden' name='times' value='{$params['ok_times']}'>
+    <input type='submit' class='button' value='Adatok megadása és fizetés'/>
+    <a href='bejelentkezes'><div class='button'>Bejelentkezés</div></a>
+</form>
+<div id='next-button'></div>
